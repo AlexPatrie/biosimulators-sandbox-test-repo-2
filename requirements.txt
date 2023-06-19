@@ -1,3 +1,6 @@
+# primary interaction module 
+biosimulators-copasi
+
 # Core modules (mandatory)
 jupyterlite-core==0.1.0
 jupyterlab~=3.5.1
@@ -44,3 +47,5 @@ ipyleaflet
 # Python: plotting libraries (optional)
 plotly>=5,<6
 bqplot
+
+# url for jupyterlite embed: "https://alexpatrie.github.io/biosimulators-sandbox-test-repo-2/repl/index.html" 
