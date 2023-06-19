@@ -7,6 +7,7 @@ ipykernel
 jupyterlite-core==0.1.0
 jupyterlab~=3.5.1
 
+jupyterlite-xeus-python
 # Python kernel (optional)
 #jupyterlite-pyodide-kernel==0.0.6
 
