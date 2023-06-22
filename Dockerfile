@@ -1,5 +1,5 @@
 # Use the base Binder image
-FROM binder/base-notebook
+FROM python:3.9
 
 # Install any additional packages or dependencies here
 # For example, if you need numpy and pandas, you can uncomment the following lines:
