@@ -1,9 +1,9 @@
 # primary interaction module 
-#biosimulators-copasi
+biosimulators-copasi
 #
 ## Core modules (mandatory)
-#jupyterlite-core==0.1.0
-#jupyterlab~=3.5.1
+jupyterlite-core==0.1.0
+jupyterlab~=3.5.1
 #
 #jupyterlite-xeus-python
 ## Python kernel (optional)
