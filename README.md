@@ -1,29 +1,50 @@
-# JupyterLite Demo
+[![Binder](https://mybinder.org/badge_logo.svg)](https://tutorial.biosimulators.org/)
+[![All Contributors](https://img.shields.io/github/all-contributors/biosimulators/Biosimulators_tutorials/HEAD)](#contributors-)
 
-[![lite-badge](https://jupyterlite.rtfd.io/en/latest/_static/badge.svg)](https://jupyterlite.github.io/demo)
+![Logo](https://raw.githubusercontent.com/biosimulations/Biosimulations/dev/libs/shared/assets/src/assets/images/biosimulators-logo/logo-white.svg)
 
-JupyterLite deployed as a static site to GitHub Pages, for demo purposes.
+# BioSimulators tutorials
 
-## ✨ Try it in your browser ✨
+This repository contains Jupyter notebooks with tutorials for the Python APIs for the simulation tools registered with BioSimulators and a Jupyter notebook server for running the notebooks.
 
-➡️ **https://jupyterlite.github.io/demo**
+The tutorials are located in the [`tutorials`](tutorials) subdirectory. The [README](tutorials/README.md) in this directory summarizes the content of the tutorials.
 
-![github-pages](https://user-images.githubusercontent.com/591645/120649478-18258400-c47d-11eb-80e5-185e52ff2702.gif)
+## Getting started
 
-## Requirements
+### Running the tutorials online with Binder
+The easiest way to run the tutorials is with Binder. Simply open https://tutorial.biosimulators.org/ in your browser.
 
-JupyterLite is being tested against modern web browsers:
+### Running the tutorials on your own machine
+Run the following command to download the tutorials:
+```
+docker pull ghcr.io/biosimulators/tutorials
+```
 
-- Firefox 90+
-- Chromium 89+
+Run the following command to launch a Jupyter notebook server at http://localhost:8888 for the tutorials in this repository:
+```
+docker run -it --rm -p 8888:8888 ghcr.io/biosimulators/tutorials jupyter notebook --ip=0.0.0.0 --port=8888
+```
 
-## Deploy your JupyterLite website on GitHub Pages
+Alternatively, run the following command to launch a Jupyter lab server at http://localhost:8888 for the tutorials in this repository:
+```
+docker run -it --rm -p 8888:8888 ghcr.io/biosimulators/tutorials jupyter lab --ip=0.0.0.0 --port=8888
+```
 
-Check out the guide on the JupyterLite documentation: https://jupyterlite.readthedocs.io/en/latest/quickstart/deploy.html
+## License
 
-## Further Information and Updates
+This package is released under the [MIT license](LICENSE).
 
-For more info, keep an eye on the JupyterLite documentation:
+## Development team
 
-- How-to Guides: https://jupyterlite.readthedocs.io/en/latest/howto/index.html
-- Reference: https://jupyterlite.readthedocs.io/en/latest/reference/index.html
+This package was developed by the [Karr Lab](https://www.karrlab.org) at the Icahn School of Medicine at Mount Sinai in New York as part of the [Center for Reproducible Biomodeling Modeling](https://reproduciblebiomodels.org) with assistance from the contributors listed [here](CONTRIBUTORS.md).
+
+- [Bilal Shaikh](https://www.bshaikh.com)
+- [Jonathan Karr](https://www.karrlab.org)
+
+## Funding
+
+This package was developed with support from the National Institute for Bioimaging and Bioengineering (award P41EB023912).
+
+## Questions and comments
+
+Please contact us at [info@biosimulators.org](mailto:info@biosimulators.org) with any questions or comments.

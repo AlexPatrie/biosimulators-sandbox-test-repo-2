@@ -1,5 +1,0 @@
-{
-  "argv": ["python", "-m", "mykernel", "-f", "{connection_file}"],
-  "display_name": "MyKernel",
-  "language": "python"
-}
